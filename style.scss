@@ -5,28 +5,33 @@
     font-family: 'Inter', sans-serif;
 }
 
+$orange: #FF8C21;
+$purple: #3E2477;
+$gray: #36454F;
+$gray2: #272727;
+
 @mixin sides {
     margin: auto;
-    max-width: 1200px;
+    max-width: 1600px;
+    width: 100%;
 }
 
 header {
     div {
         a {
             text-decoration: none;
-            color: #272727;
-            font-size: 1rem;
+            color: $gray2;
+            font-size: .8rem;
             font-weight: bold;
             text-transform: capitalize;
         }
         div:nth-child(1) {
             display: flex;
             justify-content: flex-end;
-            padding: .8em;
-            background-color: #FF8C21;
+            padding: .3em;
+            background-color: $orange;
 
             div {
-                background-color: aqua;
                 @include sides();
             }
             
@@ -39,7 +44,25 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: .6em 0;
+            @include sides();
+
+            h1 {
+                text-align: center;
+                font-size: 1.6rem;
+                color: $orange;
+
+                span:nth-child(1) {
+                    color: $purple;
+                }
+
+                span:nth-child(2) {
+                    display: block;
+                    font-size: .7rem;
+                    font-weight: bold;
+                    color: $purple;
+                }
+            }
+
 
             ul {
                 display: flex;
