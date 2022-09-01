@@ -28,8 +28,17 @@ header {
         div:nth-child(1) {
             display: flex;
             justify-content: flex-end;
+            align-items: center;
             padding: .3em;
             background-color: $orange;
+
+            button {
+                background-color: $gray2;
+                color: aliceblue;
+                padding: .6em 2em;
+                border: none;
+                border-radius: 5px;
+            }
 
             div {
                 @include sides();
