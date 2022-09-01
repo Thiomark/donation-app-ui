@@ -46,7 +46,7 @@ header {
             align-items: center;
             @include sides();
 
-            h1 {
+            > a {
                 text-align: center;
                 font-size: 1.6rem;
                 color: $orange;
